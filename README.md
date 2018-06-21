@@ -15,10 +15,9 @@ To install this library a request should be made to sebastian.maurice@gmail.com 
 
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions.
-thedata=acnsmauricedsmas.dotraining('C:\\CORE_FILES\\Accenture\\VistraEnergy\\Models\\test2log.csv','demouser','demouser321',1,0,0,'binaward','otics','admin@analytix.ai')
 
 **import acnsmauricedsmas**
-1. acnsmauricedsmas.**dotraining**(_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
+1. acnsmauricedsmas.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
 
 **Parameters:**	
 
