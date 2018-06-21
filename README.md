@@ -1,7 +1,8 @@
 # Multi-agent accelerator for Data Science (acnsmauricedsmas)
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
 
-    1. Automatically analyse your data and perform feature selection to determine which variables are more important than others
+    1. Automatically analyse your data and perform feature selection to determine which variables are more 
+    important than others
     2. Automatically model your data for seasonality: Winter, Shoulder, and Summer seasons
     3. Automatically clean your data for outliers
     4. Automatically make predictions using the BEST algorithm (out of hundreds) that best model your data
@@ -23,7 +24,8 @@ There are literally two lines of code you need to write to train your data and m
 
 _CSV_local_file_ : string, required
 
-     A local comma-separated-file (csv) with Date in the first column.  Date must be MM/DD/YYYY format.  All other data must be numbers.
+     A local comma-separated-file (csv) with Date in the first column.  Date must be MM/DD/YYYY format.  
+     All other data must be numbers.
 
 _username_ : A username issued by the system administrator. 
 
