@@ -1,7 +1,7 @@
 # Multi-Agent Accelerator for Data Science (MAADS)
 
 ## Overview
-This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
+This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms. Users can easily integrate Predictive Analytics in any solution y wrapping additional code around the functions below. The system can:
 
     1. Automatically analyse your data and perform feature selection to determine which variables are more 
     important than others
