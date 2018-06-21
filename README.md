@@ -22,6 +22,7 @@ There are literally two lines of code you need to write to train your data and m
 **Parameters:**	
 
 _CSV_local_file_ : string, required
+
      A local comma-separated-file (csv) with Date in the first column.  Date must be MM/DD/YYYY format.  All other data must be numbers.
 
 _username_ : A username issued by the system administrator. 
