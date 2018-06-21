@@ -36,16 +36,19 @@ There are literally two lines of code you need to write to train your data and m
 
 #### Main functions:
 
-- dotraining
+- **_dotraining_**
        - Executes hundreds of agents, running hundreds of advanced algorithms.  A master agent then chooses the BEST algorithm the best          models your data.
-- dopredictions
+- **_dopredictions_**
        - After training, make high quality predictions.
 
 #### Support functions:
 
-- dolistkeys
-- dolistkeyswithkey
-- dodeletewithkey
+- **_dolistkeys_**
+        - List all of the keys associated with the data you have analysed. 
+- **_dolistkeyswithkey_**
+        - List data associated with a single key.
+- **_dodeletewithkey_**
+        - Permanently delete all data associated with your key.
 
 ### First import the Python library.
 
