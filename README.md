@@ -34,6 +34,8 @@ To install this library a request should be made to the system administrator **_
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions:
 
+#### Main functions:
+
 - dotraining
 - dopredictions
 
