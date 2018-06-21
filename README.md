@@ -13,7 +13,8 @@ This library allows users to harness the power of agent-based computing using hu
 To install this library a request should be made to the system administrator **_sebastian.maurice@gmail.com_** for a username and password.  Once you have these credentials then install this Python library.
 
 ### Compatibility
-    Python 3.5 or greater
+    - Python 3.5 or greater
+    - Minimal Python skills needed
 
 ### License
 ##### Author: Sebastian Maurice, PhD
