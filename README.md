@@ -147,5 +147,86 @@ _section_attr_ : string buffer
         
         The string buffer contains the prediction or the key or the feature analysis.
         
+#### 4. acnsmauricedsmas.**dodeletewithkey**(_username,password,company,email,pkey_)
+
+**Parameters:**	
+
+_username_ : string buffer
+
+     The username given to you by system administrator.
+
+_password_ : string buffer
+
+     The password given to you by system administrator.
+
+_company_ : string buffer
+
+     Your company assicated with your username.
+
+_email_ : string buffer
+
+     Your email associated with your username.
+
+_pkey_ : string buffer
+
+     The key you want deleted.  This can be attained from dolistkeys function.
+
+   **Returns:** NULL
+        
+        Deletes all files and tables associated with the key permanently.
+        
+#### 5. acnsmauricedsmas.**dolistkeys**(_username,password,company,email_)
+
+**Parameters:**	
+
+_username_ : string buffer
+
+     The username given to you by system administrator.
+
+_password_ : string buffer
+
+     The password given to you by system administrator.
+
+_company_ : string buffer
+
+     Your company assicated with your username.
+
+_email_ : string buffer
+
+     Your email associated with your username.
+
+   **Returns:** string buffer
+        
+        Lists all the keys associated with your username.
+        
+#### 6. acnsmauricedsmas.**dolistkeyswithkey**(_username,password,company,email, pkey_)
+
+**Parameters:**	
+
+_username_ : string buffer
+
+     The username given to you by system administrator.
+
+_password_ : string buffer
+
+     The password given to you by system administrator.
+
+_company_ : string buffer
+
+     Your company assicated with your username.
+
+_email_ : string buffer
+
+     Your email associated with your username.
+
+_pkey_ : string buffer
+
+     The key you want returned.
+
+   **Returns:** string buffer
+        
+        Returns the information (with independent variables) associated with your key.
+        
+            
             
         
