@@ -29,7 +29,7 @@ To install this library a request should be made to the system administrator **_
  
  at the command prompt.  
  
- #### (This assumes you have Python installed on your computer and latest version of PIP.) [a Link](https://www.python.org/downloads/)
+ #### (This assumes you have Python installed on your computer and latest version of PIP.) [Python Download](https://www.python.org/downloads/)
 
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions:
