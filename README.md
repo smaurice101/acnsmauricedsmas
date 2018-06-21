@@ -11,8 +11,13 @@ This library allows users to harness the power of agent-based computing using hu
 To install this library a request should be made to the system administrator **_sebastian.maurice@gmail.com_** for a username and password.  Once you have these credentials then install this Python library.
 
 # Installation
- ## Issue a _PIP install acnsmauricedsmas_ at the command prompt.  
- ### (This assumes you have Python installed on your computer.)
+ ## Issue a 
+ 
+ >_PIP install acnsmauricedsmas_ 
+ 
+ at the command prompt.  
+ 
+ #### (This assumes you have Python installed on your computer.)
 
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions.
