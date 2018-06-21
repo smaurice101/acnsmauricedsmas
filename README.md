@@ -75,7 +75,7 @@ _your_email_ : string, required
             PKEY: : This is the key to the BEST algorithm and must be used when making predictions.
         
 
-2. acnsmauricedsmas.**dopredictions**(_attr,pkey,inputs,username,password,your_company_name, your_email_)
+#### 2. acnsmauricedsmas.**dopredictions**(_attr,pkey,inputs,username,password,your_company_name, your_email_)
 
 **Parameters:**	
 
@@ -116,7 +116,7 @@ _your_email_ : string, required
         
             DATA: : This contains your prediction.
 
-3. acnsmauricedsmas.**returndata**(_thepredictions, section_attr_)
+#### 3. acnsmauricedsmas.**returndata**(_thepredictions, section_attr_)
 
 **Parameters:**	
 
