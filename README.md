@@ -1,4 +1,4 @@
-# Multi-agent accelerator for Data Science (MAADS)
+# Multi-Agent Accelerator for Data Science (MAADS)
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
 
     1. Automatically analyse your data and perform feature selection to determine which variables are more 
