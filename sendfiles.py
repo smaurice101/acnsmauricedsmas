@@ -83,23 +83,45 @@ def getpredictions(attr,pkey,thefile,username,passw,company,email):
    
    if attr==0:
       tstr=thefile
-      
-   #print("Please wait...predictions can take several minutes.")
-   
-   files = {'file': tstr,
-    'mode':1,        
-    'type':'CSV',
-    'pkey':pkey,            
-    'username': username,
-    'password': passw,
+         
+      files = {'file': tstr,
+        'mode':1,        
+        'type':'CSV',
+        'pkey':pkey,            
+        'username': username,
+        'password': passw,
     #'rowcount': rn,
     #'autofeature': autofeature,
     #'removeoutliers': removeoutliers,
     #'hasseasonality': hasseasonality,
-    'company': company,
-    'email': email,            
+       'company': company,
+       'email': email,            
     #'dependentvariable': dependentvariable,
-    'title':'Do Predictions'
+       'title':'Do Predictions'
+      }
+
+   #print(files)
+      r = requests.post(url, files)
+      msg = r.text
+   #print ("Message %s" % (msg))
+   
+      return msg
+
+
+def dolistkeys(username,passw,company,email):
+
+   rn=0
+   tstr=''
+   url='http://www.analytix.ai/stocks/otics/remotemasstream.php'
+   
+   files = {
+      'mode':2,        
+      'type':'CSV',        
+      'username': username,
+      'password': passw,
+      'company': company,
+      'email': email,              
+     'title':'Do List keys'
    }
 
    #print(files)
@@ -109,4 +131,50 @@ def getpredictions(attr,pkey,thefile,username,passw,company,email):
    
    return msg
 
+def dolistkeyswithkey(username,passw,company,email,pkey):
 
+   rn=0
+   tstr=''
+   url='http://www.analytix.ai/stocks/otics/remotemasstream.php'
+   
+   files = {
+      'mode':3,
+      'pkey':pkey,        
+      'type':'CSV',        
+      'username': username,
+      'password': passw,
+      'company': company,
+      'email': email,              
+     'title':'Do List keys with Key'
+   }
+
+   #print(files)
+   r = requests.post(url, files)
+   msg = r.text
+   #print ("Message %s" % (msg))
+   
+   return msg
+
+def dodeletewithkey(username,passw,company,email,pkey):
+
+   rn=0
+   tstr=''
+   url='http://www.analytix.ai/stocks/otics/remotemasstream.php'
+   
+   files = {
+      'mode':4,
+      'pkey':pkey,        
+      'type':'CSV',        
+      'username': username,
+      'password': passw,
+      'company': company,
+      'email': email,              
+     'title':'Do Delete with Key'
+   }
+
+   #print(files)
+   r = requests.post(url, files)
+   msg = r.text
+   #print ("Message %s" % (msg))
+   
+   return msg
