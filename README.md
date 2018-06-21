@@ -1,4 +1,8 @@
 # Multi-Agent Accelerator for Data Science (MAADS)
+
+### Compatibility
+    Python 3.5 or greater
+
 ##### Author: Sebastian Maurice, PhD
 ###### Copyright Sebastian Maurice (2018)
 
