@@ -37,7 +37,7 @@ There are literally two lines of code you need to write to train your data and m
 #### Main functions:
 
 - **_dotraining_**
-       - Executes hundreds of agents, running hundreds of advanced algorithms.  A master agent then chooses the BEST algorithm the best          models your data.
+       - Executes hundreds of agents, running hundreds of advanced algorithms.  A master agent then chooses the BEST algorithm that best          models your data.
 - **_dopredictions_**
        - After training, make high quality predictions.
 
