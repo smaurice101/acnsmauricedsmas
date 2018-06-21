@@ -4,10 +4,11 @@
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms. Users can easily integrate Predictive Analytics in any solution y wrapping additional code around the functions below. The system can:
 
     1. Automatically analyse your data and perform feature selection to determine which variables are more 
-    important than others
+       important than others
     2. Automatically model your data for seasonality: Winter, Shoulder, and Summer seasons
     3. Automatically clean your data for outliers
-    4. Automatically make predictions using the BEST algorithm (out of hundreds of advanced algorithms) that best model your data
+    4. Automatically make predictions using the BEST algorithm (out of hundreds of advanced algorithms) that 
+       best model your data
     5. Do all this in minutes
 
 To install this library a request should be made to the system administrator **_sebastian.maurice@gmail.com_** for a username and password.  Once you have these credentials then install this Python library.
