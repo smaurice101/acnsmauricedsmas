@@ -1,4 +1,5 @@
 # Multi-Agent Accelerator for Data Science (MAADS)
+##### Author: Sebastian Maurice, PhD
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
 
     1. Automatically analyse your data and perform feature selection to determine which variables are more 
