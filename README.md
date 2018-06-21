@@ -19,7 +19,7 @@ To install this library a request should be made to the system administrator **_
 ### License
 ##### Author: Sebastian Maurice, PhD
 ###### Copyright Sebastian Maurice (2018)
-##### Free for personal use.  Commercial user please contact Sebastian Maurice.
+##### Free for personal use.  Commercial users please contact Sebastian Maurice.
 
 # Installation
  ## Issue a 
