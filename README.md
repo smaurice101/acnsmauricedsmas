@@ -13,7 +13,7 @@ To install this library a request should be made to the system administrator **_
 # Installation
  ## Issue a 
  
- >Pip install acnsmauricedsmas
+ >pip install acnsmauricedsmas
  
  at the command prompt.  
  
