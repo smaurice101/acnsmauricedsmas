@@ -61,9 +61,9 @@ _your_email_ : string, required
         
        Indicate your email, the one associated with your username. 
 
-   **Returns:**
-        
-       _DATA:_ : This consists of the feature selection results
-       _PKEY:_ : This is the key to the BEST algorithm and must be used when making predictions.
+   **Returns:** string buffer
+        The string buffer contains the following sections:
+            _DATA:_ : This consists of the feature selection results
+            _PKEY:_ : This is the key to the BEST algorithm and must be used when making predictions.
         
 
