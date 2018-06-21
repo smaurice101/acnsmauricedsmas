@@ -7,7 +7,7 @@ This library allows users to harness the power of agent-based computing using hu
     4. Automatically make predictions using the BEST algorithm (out of hundreds) that best model your data
     5. Do all this in minutes
 
-To install this library a request should be made to sebastian.maurice@gmail.com for a username and password.  Once you have these credentials then install this Python library.
+To install this library a request should be made to the system administrator **_sebastian.maurice@gmail.com_** for a username and password.  Once you have these credentials then install this Python library.
 
 # Installation
  ## Issue a _PIP install acnsmauricedsmas_ at the command prompt.  
@@ -16,16 +16,17 @@ To install this library a request should be made to sebastian.maurice@gmail.com 
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions.
 
-**import acnsmauricedsmas**
+**_import acnsmauricedsmas_**
 1. acnsmauricedsmas.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
 
 **Parameters:**	
 
-fit_intercept : boolean, optional, default True
+_CSV_local_file_ : string, required
+     A local comma-separated-file (csv) with Date in the first column.  Date must be MM/DD/YYYY format.  All other data must be numbers.
 
-whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (e.g. data is expected to be already centered).
+_username_ : A username issued by the system administrator. 
 
-normalize : boolean, optional, default False
+_password_ : A password issued by the system administrator.
 
 This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use sklearn.preprocessing.StandardScaler before calling fit on an estimator with normalize=False.
 
