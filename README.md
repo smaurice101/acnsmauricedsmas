@@ -27,14 +27,22 @@ _CSV_local_file_ : string, required
      A local comma-separated-file (csv) with Date in the first column.  Date must be MM/DD/YYYY format.  
      All other data must be numbers.
 
-_username_ : A username issued by the system administrator. 
+_username_ : string, required
+     
+     A username issued by the system administrator. 
 
-_password_ : A password issued by the system administrator.
+_password_ : string, required 
 
-This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use sklearn.preprocessing.StandardScaler before calling fit on an estimator with normalize=False.
+     A password issued by the system administrator.
 
-copy_X : boolean, optional, default True
+_feature_analysis_ : int, required, 1 or 0
 
-If True, X will be copied; else, it may be overwritten.
+    If 1, then a feature analysis will be done on your file.  If 0, no analysis is done.
+    
+_remove_outliers_ : int, required, 1 or 0
 
-n_jobs : int, optional, default 1
+    If 1, then outliers will be removed from your data.  If 0, no outliers are removed.
+
+_has_seasonality_ : int, required, 1 or 0
+      
+       If 1, then your data will be modeled for seasonality: Winter, Summer, Shoulder. If 0, then your data will not be modeled for            seasonality.  If modeling for seasonality, ensure you have enough data points that covers the seasons, usually 1 year of data.
