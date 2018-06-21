@@ -45,4 +45,18 @@ _remove_outliers_ : int, required, 1 or 0
 
 _has_seasonality_ : int, required, 1 or 0
       
-       If 1, then your data will be modeled for seasonality: Winter, Summer, Shoulder. If 0, then your data will not be modeled for            seasonality.  If modeling for seasonality, ensure you have enough data points that covers the seasons, usually 1 year of data.
+       If 1, then your data will be modeled for seasonality: Winter, Summer, Shoulder. If 0, then your data will 
+       not be modeled for seasonality.  If modeling for seasonality, ensure you have enough data points that 
+       covers the seasons, usually 1 year of data.
+
+_dependent_variable_ : string, required
+       
+       This is the dependent variable in your file.  All other variables will be modeled as independent variables.
+       
+_your_company_name_ : string, required
+
+       Indicate your company name as one associated with your username. 
+       
+_your_email_ : string, required       
+        
+       Indicate your email as one associated with your username. 
