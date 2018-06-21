@@ -62,8 +62,68 @@ _your_email_ : string, required
        Indicate your email, the one associated with your username. 
 
    **Returns:** string buffer
+        
         The string buffer contains the following sections:
-            _DATA:_ : This consists of the feature selection results
-            _PKEY:_ : This is the key to the BEST algorithm and must be used when making predictions.
+        
+            DATA: : This consists of the feature selection results
+            PKEY: : This is the key to the BEST algorithm and must be used when making predictions.
         
 
+2. acnsmauricedsmas.**dopredictions**(_attr,pkey,inputs,username,password,your_company_name, your_email_)
+
+**Parameters:**	
+
+_attr_ : int, required
+
+     This value should be 0.  It may change to other values in the future.
+
+_pkey_ : string, required
+
+     This value must be retrieved from dotraining.  Note you can store PKEY after you have trained your file. 
+     Training does not have to run before predictions, as training occurs more infrequently.
+
+_inputs_ : string, required
+     
+     This is a row of input data that must match the independent variables in your CSV. For example, if your 
+     trained file is: Date, A, B, C, D and A is your dependent variable, then your inputs must be:
+     Date, B, C, D
+
+_username_ : string, required
+     
+     A username issued by the system administrator. 
+
+_password_ : string, required 
+
+     A password issued by the system administrator.
+     
+_your_company_name_ : string, required
+
+       Indicate your company name, the one associated with your username. 
+       
+_your_email_ : string, required       
+        
+       Indicate your email, the one associated with your username. 
+     
+   **Returns:** string buffer
+        
+        The string buffer contains the following sections:
+        
+            DATA: : This contains your prediction.
+
+3. acnsmauricedsmas.**returndata**(_thepredictions,'DATA:'_)
+
+**Parameters:**	
+
+_thepredictions_ : string buffer
+
+     This value is returned from dopredictions.
+
+_section_attr_ : string buffer
+
+     This value can be one of two values:
+        
+        PKEY: : This returns the key from the dotraining function.  Note the semi-colon.
+        DATA: : This returns the data from the dotraining or dopredictions functions.  Note the semi-colon.
+        
+        
+        
