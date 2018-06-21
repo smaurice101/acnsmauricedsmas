@@ -1,12 +1,6 @@
 # Multi-Agent Accelerator for Data Science (MAADS)
 
-### Compatibility
-    Python 3.5 or greater
-
-### License
-##### Author: Sebastian Maurice, PhD
-###### Copyright Sebastian Maurice (2018)
-
+### Overview
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
 
     1. Automatically analyse your data and perform feature selection to determine which variables are more 
@@ -17,6 +11,13 @@ This library allows users to harness the power of agent-based computing using hu
     5. Do all this in minutes
 
 To install this library a request should be made to the system administrator **_sebastian.maurice@gmail.com_** for a username and password.  Once you have these credentials then install this Python library.
+
+### Compatibility
+    Python 3.5 or greater
+
+### License
+##### Author: Sebastian Maurice, PhD
+###### Copyright Sebastian Maurice (2018)
 
 # Installation
  ## Issue a 
