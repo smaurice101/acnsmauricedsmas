@@ -55,8 +55,13 @@ _dependent_variable_ : string, required
        
 _your_company_name_ : string, required
 
-       Indicate your company name as one associated with your username. 
+       Indicate your company name, the one associated with your username. 
        
 _your_email_ : string, required       
         
-       Indicate your email as one associated with your username. 
+       Indicate your email, the one associated with your username. 
+
+    **Returns:**
+        
+        
+
