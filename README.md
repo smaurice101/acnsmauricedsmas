@@ -29,7 +29,7 @@ To install this library a request should be made to the system administrator **_
  
  at the command prompt.  
  
- #### (This assumes you have [Download Python] (https://www.python.org/downloads/) and installed it on your computer.)
+ #### This assumes you have [Download Python] (https://www.python.org/downloads/) and installed it on your computer.
 
 # Syntax
 There are literally two lines of code you need to write to train your data and make predictions:
