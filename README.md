@@ -110,7 +110,7 @@ _your_email_ : string, required
         
             DATA: : This contains your prediction.
 
-3. acnsmauricedsmas.**returndata**(_thepredictions,'DATA:'_)
+3. acnsmauricedsmas.**returndata**(_thepredictions, section_attr_)
 
 **Parameters:**	
 
@@ -126,4 +126,9 @@ _section_attr_ : string buffer
         DATA: : This returns the data from the dotraining or dopredictions functions.  Note the semi-colon.
         
         
+   **Returns:** string buffer
+        
+        The string buffer contains the prediction or the key or the feature analysis.
+        
+            
         
