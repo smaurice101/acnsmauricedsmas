@@ -32,7 +32,18 @@ To install this library a request should be made to the system administrator **_
  #### (This assumes you have Python installed on your computer and latest version of PIP.)
 
 # Syntax
-There are literally two lines of code you need to write to train your data and make predictions.  First import the Python library.
+There are literally two lines of code you need to write to train your data and make predictions:
+
+- dotraining
+- dopredictions
+
+#### Support functions:
+
+- dolistkeys
+- dolistkeyswithkey
+- dodeletewithkey
+
+### First import the Python library.
 
 >**_import acnsmauricedsmas_**
 
