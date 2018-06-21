@@ -24,7 +24,7 @@ There are literally two lines of code you need to write to train your data and m
 
 >**_import acnsmauricedsmas_**
 
-1. acnsmauricedsmas.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
+## 1. acnsmauricedsmas.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
 
 **Parameters:**	
 
