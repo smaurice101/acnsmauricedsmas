@@ -1,5 +1,6 @@
 # Multi-agent accelerator for Data Science (acnsmauricedsmas)
 This library allows users to harness the power of agent-based computing using hundreds of advanced linear and non-linear algorithms.  The system can:
+
     1. Automatically analyse your data and perform feature selection to determine which variables are more important than others
     2. Automatically model your data for seasonality: Winter, Shoulder, and Summer seasons
     3. Automatically clean your data for outliers
