@@ -23,11 +23,9 @@ To install this library a request should be made to the system administrator **_
 ##### Free for personal use.  Commercial users please contact Sebastian Maurice.
 
 # Installation
- ## Issue a 
+ ## At the command prompt write:
  
  >_pip install acnsmauricedsmas_
- 
- at the command prompt.  
  
  #### This assumes you have [Downloaded Python](https://www.python.org/downloads/) and installed it on your computer.  
 
