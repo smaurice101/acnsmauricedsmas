@@ -160,7 +160,18 @@ _section_attr_ : string buffer
         
         PKEY: : This returns the key from the dotraining function.  Note the semi-colon.
         DATA: : This returns the data from the dotraining or dopredictions functions.  Note the semi-colon.
-        
+        ALGO0: : This returns the BEST algorithm determined by MAADS - without seasonality.
+        ACCURACY0: : This returns the forecast accuracy for the BEST algorithm - without seasonaility.
+        SEASON0: : This returns allseason - for no seasonality.
+        ALGO1: : This returns the BEST algorithm determined by MAADS for WINTER.
+        ACCURACY1: : This returns the forecast accuracy for the BEST algorithm for WINTER.
+        SEASON1: : This returns WINTER.
+        ALGO2: : This returns the BEST algorithm determined by MAADS for SUMMER.
+        ACCURACY2: : This returns the forecast accuracy for the BEST algorithm for SUMMER.
+        SEASON2: : This returns SUMMER.
+        ALGO3: : This returns the BEST algorithm determined by MAADS for SHOULDER season.
+        ACCURACY3: : This returns the forecast accuracy for the BEST algorithm for SHOULDER season.
+        SEASON3: : This returns SHOULDER.
         
    **Returns:** string buffer
         
