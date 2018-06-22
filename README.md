@@ -49,6 +49,8 @@ There are literally two lines of code you need to write to train your data and m
         - List data associated with a single key.
 - **_dodeletewithkey_**
         - Permanently delete all data associated with your key.
+- **_returndata_**
+        - Returns data from the string buffer.
 
 ### First import the Python library.
 
