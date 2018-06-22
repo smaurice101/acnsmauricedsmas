@@ -25,7 +25,7 @@ To install this library a request should be made to the system administrator **_
 # Installation
  ## At the command prompt write:
  
- >_pip install acnsmauricedsmas_
+ >_pip install maads_
  
  #### This assumes you have [Downloaded Python](https://www.python.org/downloads/) and installed it on your computer.  
 
