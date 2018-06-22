@@ -15,7 +15,9 @@ import imp
 import re
 
 
+
 def returndata(buffer,label):
+      #print("LABEL: %s" % (label))
       if label=='PKEY:':
          val=""
          pattern = re.compile('\s*[,\n]\s*')
@@ -23,6 +25,100 @@ def returndata(buffer,label):
          listvalues=fixed.split(', ')
          val=[s for s in listvalues if label in s]      
          rval=val[0].split(':')[1]
+      elif label=='ALGO0:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         #print(listvalues)
+         val=[s for s in listvalues if label in s]
+         #print(val)
+         rval=val[0].split(':')[1]
+      elif label=='ACCURACY0:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]
+      elif label=='SEASON0:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]         
+
+      elif label=='ALGO1:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         #print(listvalues)
+         val=[s for s in listvalues if label in s]
+         #print(val)
+         rval=val[0].split(':')[1]
+      elif label=='ACCURACY1:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]
+      elif label=='SEASON1:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]         
+      elif label=='ALGO2:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         #print(listvalues)
+         val=[s for s in listvalues if label in s]
+         #print(val)
+         rval=val[0].split(':')[1]
+      elif label=='ACCURACY2:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]
+      elif label=='SEASON2:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]         
+      elif label=='ALGO3:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         #print(listvalues)
+         val=[s for s in listvalues if label in s]
+         #print(val)
+         rval=val[0].split(':')[1]
+      elif label=='ACCURACY3:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]
+      elif label=='SEASON3:':
+         val=""
+         pattern = re.compile('\s*[,\n]\s*')
+         fixed = pattern.sub(', ', buffer)
+         listvalues=fixed.split(', ')
+         val=[s for s in listvalues if label in s]      
+         rval=val[0].split(':')[1]         
+         
       elif label=='DATA:':
          val=""
          pattern = re.compile('\s*[:,\n]\s*')
@@ -34,6 +130,8 @@ def returndata(buffer,label):
          pred=float(listvalues[3])
          acc=float(listvalues[4])
          rval=[fdate,inp,pred,acc]
+      else:
+         return "%s not found" % (label)
           
       return rval
 
