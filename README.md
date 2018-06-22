@@ -52,9 +52,9 @@ There are literally two lines of code you need to write to train your data and m
 
 ### First import the Python library.
 
->**_import acnsmauricedsmas_**
+>**_import maads_**
 
-##### 1. acnsmauricedsmas.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
+##### 1. maads.**dotraining**(_CSV_local_file, username, password, feature_analysis, remove_outliers, has_seasonality, dependent_variable, your_company_name, your_email_)
 
 **Parameters:**	
 
@@ -105,7 +105,7 @@ _your_email_ : string, required
             PKEY: : This is the key to the BEST algorithm and must be used when making predictions.
         
 
-#### 2. acnsmauricedsmas.**dopredictions**(_attr,pkey,inputs,username,password,your_company_name, your_email_)
+#### 2. maads.**dopredictions**(_attr,pkey,inputs,username,password,your_company_name, your_email_)
 
 **Parameters:**	
 
@@ -146,7 +146,7 @@ _your_email_ : string, required
         
             DATA: : This contains your prediction.
 
-#### 3. acnsmauricedsmas.**returndata**(_thepredictions, section_attr_)
+#### 3. maads.**returndata**(_thepredictions, section_attr_)
 
 **Parameters:**	
 
@@ -177,7 +177,7 @@ _section_attr_ : string buffer
         
         The string buffer contains the prediction or the key or the feature analysis.
         
-#### 4. acnsmauricedsmas.**dodeletewithkey**(_username,password,company,email,pkey_)
+#### 4. maads.**dodeletewithkey**(_username,password,company,email,pkey_)
 
 **Parameters:**	
 
@@ -205,7 +205,7 @@ _pkey_ : string buffer
         
         Deletes all files and tables associated with the key permanently.
         
-#### 5. acnsmauricedsmas.**dolistkeys**(_username,password,company,email_)
+#### 5. maads.**dolistkeys**(_username,password,company,email_)
 
 **Parameters:**	
 
@@ -229,7 +229,7 @@ _email_ : string buffer
         
         Lists all the keys associated with your username.
         
-#### 6. acnsmauricedsmas.**dolistkeyswithkey**(_username,password,company,email, pkey_)
+#### 6. maads.**dolistkeyswithkey**(_username,password,company,email, pkey_)
 
 **Parameters:**	
 
