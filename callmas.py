@@ -1,7 +1,7 @@
 #############################################################
 #
-#  Author: Sebastian Maurice, PhD
-#  Copyright by Sebastian Maurice 2018
+#  Author: Sebastian Maurice, PhD                           #
+#  Copyright by Sebastian Maurice 2018                      #
 #  All rights reserved.
 #  Email: Sebastian.maurice@gmail.com
 #
