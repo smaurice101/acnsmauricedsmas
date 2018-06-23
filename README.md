@@ -258,5 +258,72 @@ _pkey_ : string buffer
         Returns the information (with independent variables) associated with your key.
         
             
-            
+# Simple Example            
+
+#############################################################
+
+  Author: Sebastian Maurice, PhD
+  Copyright by Sebastian Maurice 2018
+  All rights reserved.
+  Email: Sebastian.maurice@gmail.com
+
+#############################################################
+
+
+# IMPORT THE MAAADS LIBRARY
+import maads
+
+# IMPORT ADDITIONAL LIBRARY
+import imp
+
+
+# LOAD ANY DATABASE LIBRARY TO STORE PREDICTIONS
+sqlconn = imp.load_source('sqlconn','C:\\sqlsrvconnpython.py')
+
+# OPEN DATABASE CONNECTION
+connection = sqlconn.doconnect()
+cur = connection.cursor()
+
+# TEST DATA       
+inputs = '1/12/2018,37.76896'
+username='demouser'
+password='XXXXX'
+pkey='demouser_test2log_csv'
+company='otics'
+email='sebastian.maurice@gmail.com'
+
+
+# DO TRAINING - SERVER RETURNS A KEY THAT POINTS TO THE BEST ALGORITHM
+thedata=maads.dotraining('C:\\test2log.csv',username,password,1,0,0,'depvar','otics',email)
+
+# PARSE RETURNED DATA
+print(thedata)
+pkey=maads.returndata(thedata,'PKEY:')
+algo=maads.returndata(thedata,'ALGO0:')
+accuracy=maads.returndata(thedata,'ACCURACY0:')
+print(algo)
+print(pkey)
+print(accuracy)
+      
+# DO PREDICTIONS WITH THE RETURNED KEY
+thepredictions=maads.dopredictions(0,pkey,inputs,username,'XXXXXX',company,email)
+
+# PARSE THE DATA
+prediction=maads.returndata(thepredictions,'DATA:')
+
+
+# INSERT PREDICTIONS TO ANY DATABASE TABLE
+forecastdate=inputs.split(',')[0]
+a=','.join(map(str, prediction))
+predictionvalue=prediction[2]
+accuracy=prediction[3]
+print(predictionvalue)
+SQL="INSERT INTO PREDICTIONS VALUES('%s','%s','%s','%s','%s',%.3f,%.3f)" % (forecastdate,username,pkey,company,inputs,predictionvalue,accuracy)
+print(SQL)
+cur.execute(SQL)
+cur.commit()
+
+# CLOSE THE DATABASE CONNECTION
+cur.close()
+
         
