@@ -274,19 +274,19 @@ Email: Sebastian.maurice@gmail.com
 
 
 #### IMPORT THE MAAADS LIBRARY
-import maads
+>import maads
 
 #### IMPORT ADDITIONAL LIBRARY
-import imp
+>import imp
 
 
 #### LOAD ANY DATABASE LIBRARY TO STORE PREDICTIONS
-sqlconn = imp.load_source('sqlconn','C:\\sqlsrvconnpython.py')
+>sqlconn = imp.load_source('sqlconn','C:\\sqlsrvconnpython.py')
 
 #### OPEN DATABASE CONNECTION
-connection = sqlconn.doconnect()
+>connection = sqlconn.doconnect()
 
-cur = connection.cursor()
+>cur = connection.cursor()
 
 #### TEST DATA       
 >inputs = '1/12/2018,37.76896'
@@ -313,10 +313,10 @@ cur = connection.cursor()
 >accuracy=maads.returndata(thedata,'ACCURACY0:')
       
 #### DO PREDICTIONS WITH THE RETURNED KEY
-thepredictions=maads.dopredictions(0,pkey,inputs,username,'XXXXXX',company,email)
+>thepredictions=maads.dopredictions(0,pkey,inputs,username,'XXXXXX',company,email)
 
 #### PARSE THE DATA
-prediction=maads.returndata(thepredictions,'DATA:')
+>prediction=maads.returndata(thepredictions,'DATA:')
 
 
 #### INSERT PREDICTIONS TO ANY DATABASE TABLE
@@ -335,6 +335,6 @@ prediction=maads.returndata(thepredictions,'DATA:')
 >cur.commit()
 
 #### CLOSE THE DATABASE CONNECTION
-cur.close()
+>cur.close()
 
         
