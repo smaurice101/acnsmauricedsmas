@@ -285,15 +285,16 @@ sqlconn = imp.load_source('sqlconn','C:\\sqlsrvconnpython.py')
 
 #### OPEN DATABASE CONNECTION
 connection = sqlconn.doconnect()
+
 cur = connection.cursor()
 
 #### TEST DATA       
-inputs = '1/12/2018,37.76896'
-username='demouser'
-password='XXXXX'
-pkey='demouser_test2log_csv'
-company='otics'
-email='sebastian.maurice@gmail.com'
+>inputs = '1/12/2018,37.76896'
+>username='demouser'
+>password='XXXXX'
+>pkey='demouser_test2log_csv'
+>company='otics'
+>email='sebastian.maurice@gmail.com'
 
 
 #### DO TRAINING - SERVER RETURNS A KEY THAT POINTS TO THE BEST ALGORITHM
