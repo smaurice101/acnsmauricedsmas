@@ -322,8 +322,6 @@ Email: Sebastian.maurice@gmail.com
 #### INSERT PREDICTIONS TO ANY DATABASE TABLE
 >forecastdate=inputs.split(',')[0]
 
->a=','.join(map(str, prediction))
-
 >predictionvalue=prediction[2]
 
 >accuracy=prediction[3]
