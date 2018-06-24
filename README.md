@@ -156,7 +156,7 @@ _thepredictions_ : string buffer
 
 _section_attr_ : string buffer
 
-     This value can be one of two values:
+     This value can be any one of the values:
         
         PKEY: : This returns the key from the dotraining function.  Note the semi-colon.
         DATA: : This returns the data from the dotraining or dopredictions functions.  Note the semi-colon.
